@@ -11,6 +11,7 @@ _Released 11/19/2024 (PENDING)_
 **Bugfixes:**
 
 - Fixed an issue where some JS assets were not properly getting sourcemaps included with the vite dev server if they had a cache busting query parameter in the URL. Fixed some scenarios to ensure that the sourcemaps that were included by the vite dev server were inlined. Addressed in [#30606](https://github.com/cypress-io/cypress/pull/30606).
+- Fixed Google Chrome for Testing version not parsing correctly. Fixes [#28123](https://github.com/cypress-io/cypress/issues/28123).
 
 ## 13.15.2
 
@@ -118,10 +119,6 @@ _Released 8/27/2024_
 **Misc:**
 
 - Allow HiDPI screen running Wayland to use Cypress window/browser by adding `--ozone-platform-hint=auto` flag to Electron's runtime argument. Addresses [#20891](https://github.com/cypress-io/cypress/issues/20891).
-
-**Bugfixes:**
-
-- Fixed Google Chrome for Testing version not parsing correctly. Fixes [#28123](https://github.com/cypress-io/cypress/issues/28123).
 
 **Dependency Updates:**
 
